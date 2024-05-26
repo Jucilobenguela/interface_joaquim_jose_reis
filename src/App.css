@@ -1,0 +1,63 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.section_main{
+  background-image: url( './assets/img_fundo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.nav_bar{
+  background-color: hsla(40, 63%, 45%, 0.4);
+  margin-top: 20px;
+  display: flex;
+  width: 95%;
+  height: 60px;
+  align-items: center;
+  font-size: 1.5em;
+}
+.container_logo{
+  width: 50%;
+}
+.container_logo img{
+  width: 100px;
+  height:40px;
+
+}
+.container_inf{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+
+}
+.container_icon{
+display: flex;
+width: 30%;
+justify-content: end;
+gap: 40px;
+}
+.icon li{
+  list-style-type: none;
+  color: aliceblue;
+}
+.icon li a{
+  color: aliceblue;
+}
+.container_apresentation{
+  width: 30vw;
+  height: 90vh;
+ 
+}
+main{
+  width: 90vw;
+}
+
+
