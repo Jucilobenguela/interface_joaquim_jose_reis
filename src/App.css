@@ -5,7 +5,7 @@
 }
 
 .section_main{
-  background-image: url( './assets/img_fundo.jpg');
+  background-image: url( './assets/img_fundo.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,48 +16,192 @@
   height: 100vh;
 }
 .nav_bar{
-  background-color: hsla(40, 63%, 45%, 0.4);
+  background-color: hsla(39, 92%, 14%, 0.8);
   margin-top: 20px;
   display: flex;
   width: 95%;
   height: 60px;
   align-items: center;
   font-size: 1.5em;
+  border-radius: 20px;
 }
 .container_logo{
   width: 50%;
 }
 .container_logo img{
-  width: 100px;
-  height:40px;
+  width: 150px;
+  height:60px;
+  margin: 10px 0px 0px 10px;
+
 
 }
 .container_inf{
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 
 }
 .container_icon{
 display: flex;
-width: 30%;
+width:calc(20% - 40px);
 justify-content: end;
 gap: 40px;
+margin-right: 20px;
+
 }
 .icon li{
   list-style-type: none;
-  color: aliceblue;
+  
 }
 .icon li a{
-  color: aliceblue;
+  color: rgb(196, 124, 16);
+  text-decoration: none;
+}
+.icon li a:hover{
+  background-color: rgb(51, 34, 3);
+  color: bisque;
+  padding: 15px;
+  border-radius: 20px;
 }
 .container_apresentation{
-  width: 30vw;
-  height: 90vh;
+  width: 50%; 
+  & h1{
+    font-size: 3em;
+    color: bisque;
+
+  }
+  
+& p{
+  margin-top: 50px;
+  width: 70%;
+ font-size:large;
+ color: rgb(233, 235, 227);
+}
  
 }
 main{
   width: 90vw;
+  display: flex;
+  justify-content: space-between;
+ margin: auto;
+ margin-top: 100px;
 }
+
+/*--------------------------------inicio--------------------------slides---------------------------------------------*/
+.slider{
+  background-color: hsla(40, 11%, 89%, 0.7);
+
+  width: 700px;
+  height: 500px;
+  overflow: hidden; 
+  border-radius: 10px;
+}
+.imagens{
+  display: flex;
+}
+.destaque{
+  width: 50%;
+}
+.img-produto img{
+  height: 500px;
+  width: 190px;
+  margin-right: 50px;
+  float: right;
+  
+}
+.img-produto{
+  position: relative;
+  width: 25%;
+}
+.img-produto p{
+  top: 40%;
+  transform:translatey(-50%);
+  margin-left: 30px;
+  position: absolute;
+  width: 380px;
+  color: rgb(22, 26, 29);
+  font-size: 1.3em;
+}
+ input{
+  display: none;
+  }
+
+.container-label{
+position: absolute;
+width: 700px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+
+  
+}
+.container-label .btn{
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 2s;
+}
+.container-label .btn:not(:last-child){
+  margin-right: 30px;
+}
+.container-label .btn:hover{
+  background-color: #fff;
+
+}
+
+.slides{
+  display: flex;
+  width: 400%;
+  height: 500px;
+  
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0%;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+  transition: 2s;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+  transition: 2s;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+  transition: 2s;
+}
+.navigation div {
+  border: 2px solid#20a6ff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 2s;
+}
+.navigation{
+  position: absolute;
+  width: 700px;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+}
+.navigation div:not(:last-child){
+  margin-right: 30px;
+}
+#radio1:checked ~ .navigation .auto-btn1{
+  background-color: #fff;
+}
+#radio2:checked ~ .navigation .auto-btn2{
+  background-color: #fff;
+}
+#radio3:checked ~ .navigation .auto-btn3{
+  background-color: #fff;
+}
+#radio4:checked ~ .navigation .auto-btn4{
+  background-color: #fff;
+}
+
+/*-------------------------------fim----------------------------slides----------------------------------------------*/
 
 

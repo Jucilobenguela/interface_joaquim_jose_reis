@@ -1,5 +1,5 @@
 import Item from "./second_componentes/Item"
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo.png'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import{faShoppingCart, faSign, faSignIn, faSignInAlt} from '@fortawesome/free-solid-svg-icons'
